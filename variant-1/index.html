@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MOOD MODELS — модельное агентство</title>
+  <meta name="description" content="MOOD MODELS — модельное агентство. Девушки и парни для съёмок, показов и рекламных кампаний.">
+  <meta name="theme-color" content="#0b0b0b">
+  <!-- Превью ссылки в мессенджерах и соцсетях -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="MOOD MODELS">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="MOOD MODELS — модельное агентство">
+  <meta property="og:description" content="Модельное агентство в Душанбе. Девушки и парни для съёмок, показов и рекламных кампаний.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== НАВИГАЦИЯ ===== -->
+  <header class="header" id="header">
+    <div class="topbar">
+      <div class="container topbar__inner">
+        <span class="topbar__note">Модельное агентство · Душанбе</span>
+        <div class="topbar__links">
+          <a href="tel:+992933534040">+992 93 353 4040</a>
+          <a href="https://t.me/Fashiongrouptz" target="_blank" rel="noopener">Telegram</a>
+          <span class="topbar__lang"><b>RU</b> / <a href="#">EN</a></span>
+        </div>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <div class="container nav__inner">
+        <ul class="nav__list nav__list--left">
+          <li><a href="#news">Новости</a></li>
+          <li><a href="#models" data-open-album="women">Девушки</a></li>
+          <li><a href="#models" data-open-album="men">Парни</a></li>
+        </ul>
+
+        <a href="#top" class="nav__logo" aria-label="MOOD MODELS — на главную">
+          <img src="../assets/logo-black.png" alt="MOOD MODELS" width="830" height="302">
+        </a>
+
+        <ul class="nav__list nav__list--right">
+          <li><a href="#casting">Стать моделью</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+
+        <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#news">Новости</a>
+      <a href="#models" data-open-album="top">Топ-модели</a>
+      <a href="#models" data-open-album="women">Девушки</a>
+      <a href="#models" data-open-album="men">Парни</a>
+      <a href="#casting">Стать моделью</a>
+      <a href="#contacts">Контакты</a>
+      <div class="mobile-menu__contacts">
+        <a href="tel:+992933534040">+992 93 353 4040</a>
+        <a href="https://t.me/Fashiongrouptz" target="_blank" rel="noopener">Telegram: @Fashiongrouptz</a>
+        <a href="mailto:hello@moodmodels.ru">hello@moodmodels.ru</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ===== ШАПКА / СЛАЙДШОУ ===== -->
+    <section class="hero" aria-label="MOOD MODELS">
+      <div class="hero__slides" id="heroSlides"></div>
+      <div class="hero__shade"></div>
+
+      <div class="hero__content">
+        <p class="hero__eyebrow">Модельное агентство</p>
+        <h1 class="hero__title"><img src="../assets/logo-white.png" alt="MOOD MODELS" width="2490" height="906"></h1>
+        <p class="hero__lead">Лица для fashion-съёмок, показов и рекламных кампаний</p>
+        <div class="hero__actions">
+          <a href="#models" class="btn btn--light">Смотреть моделей</a>
+          <a href="#casting" class="btn btn--outline-light">Стать моделью</a>
+        </div>
+      </div>
+
+      <div class="hero__bottom container">
+        <div class="hero__counter"><span id="heroCurrent">01</span> / <span id="heroTotal">04</span></div>
+        <div class="hero__progress" id="heroProgress"></div>
+        <a href="#news" class="hero__scroll">Листайте вниз</a>
+      </div>
+    </section>
+
+    <!-- ===== НОВОСТИ ===== -->
+    <section class="news section" id="news">
+      <div class="container">
+        <header class="news__head">
+          <div>
+            <span class="section-head__num">01</span>
+            <h2 class="section-head__title">Новости</h2>
+          </div>
+        </header>
+        <div class="news__grid" id="newsGrid"></div>
+      </div>
+    </section>
+
+    <!-- ===== МОДЕЛИ ===== -->
+    <section class="models section" id="models">
+      <div class="container">
+        <header class="section-head">
+          <span class="section-head__num">02</span>
+          <h2 class="section-head__title">Наши модели</h2>
+          <p class="section-head__text">Топ-модели агентства, девушки и парни. Откройте альбом, чтобы увидеть моделей и их параметры.</p>
+        </header>
+
+        <div class="albums">
+          <button class="album" type="button" data-album="top">
+            <span class="album__stack" data-stack="top"></span>
+            <span class="album__meta">
+              <span class="album__label">Альбом I</span>
+              <span class="album__title">Топ-модели</span>
+              <span class="album__count" data-count="top"></span>
+              <span class="album__open">Открыть альбом</span>
+            </span>
+          </button>
+
+          <button class="album" type="button" data-album="women">
+            <span class="album__stack" data-stack="women"></span>
+            <span class="album__meta">
+              <span class="album__label">Альбом II</span>
+              <span class="album__title">Девушки</span>
+              <span class="album__count" data-count="women"></span>
+              <span class="album__open">Открыть альбом</span>
+            </span>
+          </button>
+
+          <button class="album" type="button" data-album="men">
+            <span class="album__stack" data-stack="men"></span>
+            <span class="album__meta">
+              <span class="album__label">Альбом III</span>
+              <span class="album__title">Парни</span>
+              <span class="album__count" data-count="men"></span>
+              <span class="album__open">Открыть альбом</span>
+            </span>
+          </button>
+        </div>
+
+        <div class="gallery" id="gallery" hidden>
+          <div class="gallery__head">
+            <h3 class="gallery__title" id="galleryTitle">Девушки</h3>
+            <div class="gallery__tabs" role="tablist">
+              <button type="button" role="tab" data-tab="top">Топ-модели</button>
+              <button type="button" role="tab" data-tab="women">Девушки</button>
+              <button type="button" role="tab" data-tab="men">Парни</button>
+            </div>
+            <button type="button" class="gallery__close" id="galleryClose">Закрыть альбом</button>
+          </div>
+          <div class="gallery__grid" id="galleryGrid"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== СТАТЬ МОДЕЛЬЮ ===== -->
+    <section class="casting section" id="casting">
+      <div class="container casting__inner">
+        <div class="casting__visual">
+          <img id="castingImg" alt="" loading="lazy">
+          <p class="casting__quote">«Каждая карьера начинается<br>с одной фотографии»</p>
+        </div>
+
+        <div class="casting__body">
+          <header class="section-head section-head--left">
+            <span class="section-head__num">03</span>
+            <h2 class="section-head__title">Стать моделью</h2>
+            <p class="section-head__text">Мы ищем новые лица. Опыт не обязателен — научим всему: от позирования до работы на подиуме. Кастинг бесплатный.</p>
+          </header>
+
+          <div class="requirements">
+            <div class="requirements__item">
+              <span class="requirements__title">Девушки</span>
+              <span>Рост от 172 см</span>
+              <span>Возраст 14–25 лет</span>
+            </div>
+            <div class="requirements__item">
+              <span class="requirements__title">Парни</span>
+              <span>Рост от 183 см</span>
+              <span>Возраст 16–28 лет</span>
+            </div>
+          </div>
+
+          <form class="form" id="castingForm" novalidate>
+            <div class="form__row form__row--radio">
+              <label class="radio"><input type="radio" name="gender" value="female" checked><span>Девушка</span></label>
+              <label class="radio"><input type="radio" name="gender" value="male"><span>Парень</span></label>
+            </div>
+            <div class="form__grid">
+              <label class="field"><span>Имя и фамилия</span><input type="text" name="name" required autocomplete="name"></label>
+              <label class="field"><span>Город</span><input type="text" name="city" required></label>
+              <label class="field"><span>Возраст</span><input type="number" name="age" min="12" max="40" required></label>
+              <label class="field"><span>Рост, см</span><input type="number" name="height" min="150" max="210" required></label>
+              <label class="field"><span>Телефон</span><input type="tel" name="phone" required autocomplete="tel"></label>
+              <label class="field"><span>Instagram или Telegram</span><input type="text" name="social"></label>
+            </div>
+            <label class="upload">
+              <input type="file" name="photos" accept="image/*" multiple>
+              <span class="upload__title">Прикрепите 3 фото</span>
+              <span class="upload__hint" data-default="Портрет, профиль и в полный рост — без макияжа и фильтров">Портрет, профиль и в полный рост — без макияжа и фильтров</span>
+            </label>
+            <label class="check">
+              <input type="checkbox" name="agree" required>
+              <span>Соглашаюсь на обработку персональных данных</span>
+            </label>
+            <button type="submit" class="btn btn--dark btn--wide">Отправить анкету</button>
+            <p class="form__status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== ФУТЕР ===== -->
+  <footer class="footer" id="contacts">
+    <div class="container">
+      <div class="footer__top">
+        <a href="#top" class="footer__logo"><img src="../assets/logo-white.png" alt="MOOD MODELS" width="830" height="302" loading="lazy"></a>
+        <p class="footer__tagline">Модельное агентство нового поколения. Съёмки, показы, рекламные кампании.</p>
+      </div>
+
+      <div class="footer__cols">
+        <div class="footer__col">
+          <h4>Модели</h4>
+          <a href="#models" data-open-album="top">Топ-модели</a>
+          <a href="#models" data-open-album="women">Девушки</a>
+          <a href="#models" data-open-album="men">Парни</a>
+        </div>
+        <div class="footer__col">
+          <h4>Агентство</h4>
+          <a href="#news">Новости</a>
+          <a href="#casting">Стать моделью</a>
+          <a href="#contacts">Контакты</a>
+          <a href="#">Политика конфиденциальности</a>
+        </div>
+        <div class="footer__col">
+          <h4>Контакты</h4>
+          <a href="tel:+992933534040">+992 93 353 4040</a>
+          <a href="mailto:hello@moodmodels.ru">hello@moodmodels.ru</a>
+          <span>Душанбе, Ашан (3 этаж)</span>
+          <span>Пн–Пт, 11:00–20:00</span>
+        </div>
+        <div class="footer__col">
+          <h4>Соцсети</h4>
+          <a href="https://instagram.com/moodmodels" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://t.me/Fashiongrouptz" target="_blank" rel="noopener">Telegram</a>
+          <a href="https://vk.com/moodmodels" target="_blank" rel="noopener">ВКонтакте</a>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>© <span data-year>2026</span> MOOD MODELS. Все права защищены.</span>
+        <a href="#top">Наверх ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../shared/data.js"></script>
+  <script src="common.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

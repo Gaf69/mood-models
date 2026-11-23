@@ -1,0 +1,13 @@
+# служебное
+.claude/
+список моделей.txt
+desktop.ini
+Thumbs.db
+.vercel
+
+# исходники фото, которые сайт не использует (~50 МБ)
+/assets/IMG_*
+/assets/RgVzdQ90cDY.jpg
+/assets/X74fJMFhlNE.jpg
+/assets/photo_2026-*
+/assets/photo_*_2026-10-31_*
